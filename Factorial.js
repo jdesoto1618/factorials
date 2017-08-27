@@ -8,7 +8,11 @@ function fact(num) {
       return "Factorials are not defined for numbers less than 0"
     //Input is 0 or 1
     } else if (num == 0 || num == 1) {
-      return 1
+        if (num == 0) {
+          return "0! is 1 by definition"
+        } else {
+          return 1
+        }
     //All other values
     } else {
       //Start at the number before the input, stop at 2, decrement by 1
